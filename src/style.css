@@ -48,6 +48,11 @@ body {
     display: flex;
 }
 
+#body-cont {
+    width: 100%;
+    display: flex;
+}
+
 
 
 /* Right side content */
