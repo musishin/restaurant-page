@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.47.1",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1"
   }
 }
