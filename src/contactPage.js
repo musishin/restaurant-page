@@ -1,5 +1,3 @@
-const contactPage = () => {
+export default function contactPage() {
 
 }
-
-export default contactPage

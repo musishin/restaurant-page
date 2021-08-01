@@ -1,3 +1,5 @@
+import image from './images/cafe-main-8.jpeg';
+
 export default function homePage() {
     const bodyCont = document.createElement('div');
     const leftCont = document.createElement('div');
@@ -37,7 +39,7 @@ export default function homePage() {
     mainCont.classList.add('parallax');
     imgCont.setAttribute('id', 'img-cont');
     imgCont.classList.add('parallax-layer', 'parallax-layer-back');
-    homeImg.src = '../src/images/cafe-main-7.jpeg';
+    homeImg.src = image;
     infoCont.setAttribute('id', 'info-cont');
     infoCont.classList.add('parallax-layer', 'parallax-layer-base');
     bodyCont.setAttribute('id', 'body-cont');

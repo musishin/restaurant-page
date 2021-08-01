@@ -1,5 +1,3 @@
-const menuPage = () => {
+export default function menuPage() {
 
 }
-
-export default menuPage
