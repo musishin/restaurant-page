@@ -93,7 +93,7 @@ body {
 
 #info-cont {
     width: 75%;
-    height: 800px;
+    height: 75vh;
     background: rgb(255, 255, 255);
     top: 100vh;
     left: 25%;
@@ -119,7 +119,7 @@ body {
 
 /*#left-cont::after {
     content: '';
-    height: 500px;
+    height: 85vh;
     width: 1px;
     background: black;
     position: absolute;
