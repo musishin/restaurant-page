@@ -18,7 +18,7 @@ document.getElementById('main-cont').addEventListener('scroll', (e) => {
     else {
         document.getElementById('info-cont').style.background = 'white';
     }
-    if(scrollPos < -460) {
+    if(scrollPos < -499) {
         document.getElementById('rest-name').style.marginTop = '-75vh';
     }
     else {
