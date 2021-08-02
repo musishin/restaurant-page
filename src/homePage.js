@@ -15,6 +15,7 @@ export default function homePage() {
     const blurbCont = document.createElement('div');
     const blurbText = document.createElement('div');
     const hoursCont = document.createElement('div');
+    const aboutBtn = document.createElement('button');
 
     bodyCont.appendChild(leftCont);
     leftCont.appendChild(restName);
@@ -28,6 +29,7 @@ export default function homePage() {
     mainCont.appendChild(infoCont);
     infoCont.appendChild(blurbCont);
     blurbCont.appendChild(blurbText);
+    infoCont.appendChild(aboutBtn);
     infoCont.appendChild(hoursCont);
 
     restName.innerHTML = 'Seventh Heaven Caf&egrave;';
@@ -35,6 +37,7 @@ export default function homePage() {
     menuItem.innerHTML = 'Menu';
     contactItem.innerHTML = 'Contact';
     blurbText.innerHTML = 'Seventh Heaven, alternatively spelled 7th Heaven, is a bar and restaurant owned and run by Tifa Lockhart in the Final Fantasy VII series, located in the Sector 7 slums of Midgar. It has served as a home base for many of the games\' main characters, specifically in Final Fantasy VII. Located in the slums of Sector 7 in Midgar, the original Seventh Heaven bar was built by an unnamed carpenter during the events of Crisis Core -Final Fantasy VII-, and named "Seventh Heaven" by Zack Fair during a conversation.';
+    aboutBtn.innerHTML = 'Learn More';
 
     bodyCont.setAttribute('id', 'body-cont');
     leftCont.setAttribute('id', 'left-cont');
@@ -54,6 +57,7 @@ export default function homePage() {
     blurbCont.setAttribute('id', 'blurb-cont');
     blurbText.setAttribute('id', 'blurb-text');
     hoursCont.setAttribute('id', 'hours-cont');
+    aboutBtn.setAttribute('id', 'about-btn');
 
     return bodyCont;
 }

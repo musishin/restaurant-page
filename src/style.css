@@ -93,7 +93,7 @@ body {
 
 #info-cont {
     width: 75%;
-    height: 150vh;
+    height: 1150px;
     background: rgb(255, 255, 255);
     top: 100vh;
     left: 25%;
@@ -120,8 +120,20 @@ body {
     border-top: none;
     width: 100%;
     margin-top: 100px;
-    height: 450px;
+    height: 400px;
     background: #747243;
+}
+
+#about-btn {
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    background: #13130A;
+    color: white;
+    font-family: 'Galatea-Light';
+    font-size: 14px;
 }
 
 
