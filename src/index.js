@@ -7,6 +7,7 @@ content.setAttribute('id', 'content');
 document.body.appendChild(content);
 content.appendChild(homePage());
 
+/*
 document.getElementById('main-cont').addEventListener('scroll', (e) => {
     let scrollPos = 0;
     const el = document.getElementById('info-cont');
@@ -20,3 +21,4 @@ document.getElementById('main-cont').addEventListener('scroll', (e) => {
         document.getElementById('left-cont').style.color = 'black';
     }
 });
+*/
