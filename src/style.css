@@ -200,7 +200,7 @@ body {
     font-size: 28px;
     font-family: 'Galatea-Light';
     font-style: italic;
-    margin-top: -0px;
+    transition: 1s;
 }
 
 #tab-cont {

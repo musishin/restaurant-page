@@ -19,9 +19,9 @@ document.getElementById('main-cont').addEventListener('scroll', (e) => {
         document.getElementById('info-cont').style.background = 'white';
     }
     if(scrollPos < -460) {
-        document.getElementById('left-cont').style.marginTop = '-40vh';
+        document.getElementById('rest-name').style.marginTop = '-75vh';
     }
     else {
-        document.getElementById('left-cont').style.marginTop = '0';
+        document.getElementById('rest-name').style.marginTop = '0';
     }
 });
