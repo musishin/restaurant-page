@@ -7,18 +7,21 @@ content.setAttribute('id', 'content');
 document.body.appendChild(content);
 content.appendChild(homePage());
 
-/*
 document.getElementById('main-cont').addEventListener('scroll', (e) => {
     let scrollPos = 0;
     const el = document.getElementById('info-cont');
     scrollPos = window.pageYOffset + el.getBoundingClientRect().top;
     console.log(scrollPos);
-    if(scrollPos <= 300) {
-        document.getElementById('left-cont').style.background = '#CAB5AD';
-        document.getElementById('left-cont').style.color = '#13130A';
-    } else {
-        document.getElementById('left-cont').style.background = 'white';
-        document.getElementById('left-cont').style.color = 'black';
+    if(scrollPos <= 450) {
+        document.getElementById('info-cont').style.background = 'rgb(240, 240, 240)';
+    }
+    else {
+        document.getElementById('info-cont').style.background = 'white';
+    }
+    if(scrollPos < -460) {
+        document.getElementById('left-cont').style.marginTop = '-40vh';
+    }
+    else {
+        document.getElementById('left-cont').style.marginTop = '0';
     }
 });
-*/

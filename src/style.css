@@ -1,15 +1,22 @@
 @font-face {
-    font-family: Galatea;
+    font-family: 'Galatea';
+    src: url('./fonts/Galatea\ Regular\ Regular.woff') format('woff');
+}
+@font-face {
+    font-family: Galatea-Thin;
     src: url('../src/fonts/Galatea\ Regular\ Thin.woff') format('woff');
 }
 @font-face {
     font-family: Galatea-Light;
     src: url('../src/fonts/Galatea\ Regular\ Light.woff') format('woff');
 }
-
-body {
-    padding: 0%;
-    margin: 0%;
+@font-face {
+    font-family: Galatea-Medium;
+    src: url('./fonts/Galatea\ Regular\ Medium.woff') format('woff');
+}
+@font-face {
+    font-family: Galatea-Bold;
+    src: url('./fonts/Galatea\ Regular\ Bold.woff') format('woff');
 }
 
 
@@ -43,6 +50,11 @@ body {
 
 /* Main content div */
 
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
 #content {
     width: 100%;
     display: flex;
@@ -61,7 +73,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    z-index: 0;
     position: relative;
 }
 
@@ -93,34 +104,42 @@ body {
 
 #info-cont {
     width: 75%;
-    height: 1150px;
     background: rgb(255, 255, 255);
-    top: 100vh;
-    left: 25%;
+    margin-top: 100vh;
+    margin-left: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    transition: 1s;
 }
 
 #blurb-cont {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+#blurb-title {
+    font-family: 'Galatea';
+    font-size: 30px;
 }
 
 #blurb-text {
-    font-family: 'Galatea';
-    font-size: 14px;
+    font-family: 'Galatea-Thin';
+    font-size: 14.5px;
     width: 550px;
     text-align: center;
+    margin-top: 40px;
 }
 
 #hours-cont {
     border-top: none;
     width: 100%;
-    margin-top: 100px;
-    height: 400px;
+    margin-top: 120px;
+    height: 60vh;
     background: #747243;
 }
 
@@ -128,12 +147,26 @@ body {
     width: 110px;
     height: 40px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 35px;
     border: none;
     background: #13130A;
     color: white;
     font-family: 'Galatea-Light';
     font-size: 14px;
+    transition: 0.7s;
+}
+
+#about-btn:hover {
+    background: white;
+    border: 1px solid #13130A;
+    color: #13130A;
+}
+
+#footer {
+    background: white;
+    width: 100%;
+    height: 40vh;
+    background: white;
 }
 
 
@@ -151,7 +184,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 1;
+    transition: 1s;
 }
 
 /*#left-cont::after {
@@ -175,7 +208,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Galatea';
+    font-family: 'Galatea-Thin';
 }
 
 .menu-items {
