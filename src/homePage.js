@@ -3,12 +3,6 @@ import hoursImage from './images/cafe-main-3.jpeg';
 
 export default function homePage() {
     const bodyCont = document.createElement('div');
-    const leftCont = document.createElement('div');
-    const restName = document.createElement('span');
-    const tabCont = document.createElement('div');
-    const homeItem = document.createElement('span');
-    const menuItem = document.createElement('span');
-    const contactItem = document.createElement('span');
     const mainCont = document.createElement('div');
     const imgCont = document.createElement('div');
     const homeImg = document.createElement('img');
@@ -39,16 +33,11 @@ export default function homePage() {
     const footerSecOneTitle = document.createElement('div');
     const footerSecTwoTitle = document.createElement('div');
     const footerSecThreeTitle = document.createElement('div');
+    const footerSecOneText = document.createElement('div');
+    const footerSecTwoText = document.createElement('div');
+    const footerSecThreeText = document.createElement('div');
 
-    bodyCont.appendChild(leftCont);
     bodyCont.appendChild(mainCont);
-
-    leftCont.appendChild(restName);
-    leftCont.appendChild(tabCont);
-
-    tabCont.appendChild(homeItem);
-    tabCont.appendChild(menuItem);
-    tabCont.appendChild(contactItem);
 
     mainCont.appendChild(imgCont);
     mainCont.appendChild(infoCont);
@@ -87,13 +76,12 @@ export default function homePage() {
     footer.appendChild(footerSecThree);
 
     footerSecOne.appendChild(footerSecOneTitle);
+    footerSecOne.appendChild(footerSecOneText);
     footerSecTwo.appendChild(footerSecTwoTitle);
+    footerSecTwo.appendChild(footerSecTwoText);
     footerSecThree.appendChild(footerSecThreeTitle);
+    footerSecThree.appendChild(footerSecThreeText);
 
-    restName.innerHTML = 'Seventh Heaven Caf&egrave;';
-    homeItem.innerHTML = 'Home';
-    menuItem.innerHTML = 'Menu';
-    contactItem.innerHTML = 'Contact';
     blurbText.innerHTML = 'Seventh Heaven, alternatively spelled 7th Heaven, is a bar and restaurant owned and run by Tifa Lockhart in the Final Fantasy VII series, located in the Sector 7 slums of Midgar. It has served as a home base for many of the games\' main characters, specifically in Final Fantasy VII. Located in the slums of Sector 7 in Midgar, the original Seventh Heaven bar was built by an unnamed carpenter during the events of Crisis Core -Final Fantasy VII-, and named "Seventh Heaven" by Zack Fair during a conversation.';
     aboutBtn.innerHTML = 'Learn More';
     blurbTitle.innerHTML = 'Welcome to Seventh Heaven';
@@ -108,14 +96,11 @@ export default function homePage() {
     footerSecOneTitle.innerHTML = 'ABOUT OUR COMPANY';
     footerSecTwoTitle.innerHTML = 'POLICY AND PROMOTION';
     footerSecThreeTitle.innerHTML = 'REWARDS';
+    footerSecOneText.innerText = '\n\n\nABOUT SEVENTH HEAVEN\n\n\nCAREERS\n\n\nINVESTOR RELATIONS';
+    footerSecTwoText.innerText = '\n\n\nSTORE POLICY';
+    footerSecThreeText.innerText = '\n\n\nABOUT MEMBERS\' POLICY';
 
     bodyCont.setAttribute('id', 'body-cont');
-    leftCont.setAttribute('id', 'left-cont');
-    restName.setAttribute('id', 'rest-name');
-    tabCont.setAttribute('id', 'tab-cont');
-    homeItem.classList.add('menu-items');
-    menuItem.classList.add('menu-items');
-    contactItem.classList.add('menu-items');
     mainCont.setAttribute('id', 'main-cont');
     mainCont.classList.add('parallax');
     imgCont.setAttribute('id', 'img-cont');
@@ -154,6 +139,9 @@ export default function homePage() {
     footerSecOneTitle.classList.add('footer-section-title');
     footerSecTwoTitle.classList.add('footer-section-title');
     footerSecThreeTitle.classList.add('footer-section-title');
+    footerSecOneText.classList.add('footer-section-text');
+    footerSecTwoText.classList.add('footer-section-text');
+    footerSecThreeText.classList.add('footer-section-text');
 
     return bodyCont;
 }

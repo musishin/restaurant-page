@@ -321,13 +321,18 @@ body {
 .footer-section {
     width: 30%;
     height: 100%;
-    font-family: 'Galatea-Light';
 }
 
 .footer-section-title {
     width: 100%;
     font-size: 12px;
     font-family: 'Galatea';
+}
+
+.footer-section-text {
+    width: 100%;
+    font-family: 'Galatea-Light';
+    font-size: 10px;
 }
 
 
