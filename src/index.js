@@ -13,15 +13,15 @@ document.getElementById('main-cont').addEventListener('scroll', (e) => {
     scrollPos = window.pageYOffset + el.getBoundingClientRect().top;
     console.log(scrollPos);
     if(scrollPos <= 450) {
-        document.getElementById('info-cont').style.background = 'rgb(240, 240, 240)';
+        document.getElementById('blurb-cont').style.background = 'rgb(240, 240, 240)';
     }
     else {
-        document.getElementById('info-cont').style.background = 'white';
+        document.getElementById('blurb-cont').style.background = 'white';
     }
-    if(scrollPos < -499) {
-        document.getElementById('rest-name').style.marginTop = '-75vh';
+    /*if(scrollPos < -499) {
+        document.getElementById('left-cont').style.marginTop = '-40vh';
     }
     else {
-        document.getElementById('rest-name').style.marginTop = '0';
-    }
+        document.getElementById('left-cont').style.marginTop = '0';
+    }*/
 });

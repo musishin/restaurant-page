@@ -63,6 +63,7 @@ body {
 #body-cont {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -103,10 +104,9 @@ body {
 }
 
 #info-cont {
-    width: 75%;
+    width: 100%;
     background: rgb(255, 255, 255);
     margin-top: 100vh;
-    margin-left: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +119,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 120px;
+    width: 75%;
+    height: 500px;
+    margin-left: 25%;
+    transition: 1s;
 }
 
 #blurb-title {
@@ -137,10 +140,87 @@ body {
 
 #hours-cont {
     border-top: none;
-    width: 100%;
-    margin-top: 120px;
+    width: 75%;
+    margin-left: 25%;
     height: 60vh;
+    min-height: 475px;
+    max-height: 500px;
     background: #747243;
+    display: flex;
+}
+
+#hours-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+#hours-inner-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hours-title {
+    font-family: 'Galatea-Light';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+#address-title {
+    font-family: 'Galatea-Light';
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+#hours-text {
+    font-family: 'Galatea-Thin';
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#address-text {
+    font-family: 'Galatea-Thin';
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#order-text {
+    width: 60%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: 'Galatea-Thin';
+}
+
+#order-btn {
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    background: #13130A;
+    color: white;
+    font-family: 'Galatea-Light';
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+#order-btn:hover {
+    background: rgb(240, 240, 240);
+    color: #13130A;
 }
 
 #about-btn {
@@ -148,25 +228,106 @@ body {
     height: 40px;
     cursor: pointer;
     margin-top: 35px;
-    border: none;
+    border: 1px solid #13130A;
     background: #13130A;
     color: white;
     font-family: 'Galatea-Light';
     font-size: 14px;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #about-btn:hover {
-    background: white;
+    background: rgb(240, 240, 240);
+    border: 1px solid #13130A;
+    color: #13130A;
+}
+
+#mail-cont {
+    width: 75%;
+    height: 250px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(245, 245, 245);
+}
+
+#mail-inner-cont {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail-text {
+    width: 100%;
+    font-family: 'Galatea-Light';
+    font-size: 25px;
+}
+
+#mail-form {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail-input {
+    width: 380px;
+    height: 34px;
+    font-size: 18px;
+    font-family: 'Galatea-Light';
+    padding-left: 5px;
+    border: none;
+}
+
+#mail-btn {
+    width: 110px;
+    height: 34px;
+    cursor: pointer;
+    margin-left: 50px;
+    background: #13130A;
+    color: white;
+    font-family: 'Galatea-Light';
+    font-size: 14px;
+    transition: 0.5s;
+    border: none;
+    border: 1px solid #13130A;
+    border-radius: 3px;
+}
+
+#mail-btn:hover {
+    background: rgb(240, 240, 240);
     border: 1px solid #13130A;
     color: #13130A;
 }
 
 #footer {
     background: white;
-    width: 100%;
+    margin-left: 25%;
+    width: 75%;
     height: 40vh;
-    background: white;
+    min-height: 315px;
+    max-height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 30%;
+    height: 100%;
+    font-family: 'Galatea-Light';
+}
+
+.footer-section-title {
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Galatea';
 }
 
 
@@ -174,7 +335,7 @@ body {
 /* Main left bar */
 
 #left-cont {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     height: 100%;
@@ -185,6 +346,7 @@ body {
     justify-content: center;
     flex-direction: column;
     transition: 1s;
+    z-index: 1;
 }
 
 /*#left-cont::after {
