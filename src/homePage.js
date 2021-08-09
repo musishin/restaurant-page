@@ -100,12 +100,13 @@ export default function homePage() {
     footerSecTwoText.innerText = '\n\n\nSTORE POLICY';
     footerSecThreeText.innerText = '\n\n\nABOUT MEMBERS\' POLICY';
 
-    bodyCont.setAttribute('id', 'body-cont');
+    bodyCont.classList.add('body-cont');
     mainCont.setAttribute('id', 'main-cont');
     mainCont.classList.add('parallax');
     imgCont.setAttribute('id', 'img-cont');
     imgCont.classList.add('parallax-layer', 'parallax-layer-back');
     homeImg.src = image;
+    homeImg.classList.add('image-fade-in');
     infoCont.setAttribute('id', 'info-cont');
     infoCont.classList.add('parallax-layer', 'parallax-layer-base');
     bodyCont.setAttribute('id', 'body-cont');
