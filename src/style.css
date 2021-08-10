@@ -108,12 +108,13 @@ body {
 /* Main left bar */
 
 #left-cont {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
+    bottom: 0;
     height: 100%;
     width: 25%;
-    background: white;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -419,24 +420,66 @@ body {
 
 #menu-body-cont {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 75%;
+    min-height: 100vh;
+    margin-left: 25%;
+    background: rgb(245, 245, 245);
+}
+
+#menu-top-cont {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#menu-top-img {
+    width: 100%;
+    object-fit: contain;
 }
 
 #menu-title {
-    font-size: 25px;
+    position: absolute;
+    left: 100px;
+    top: 25%;
+    bottom: 25%;
+    height: 50%;
+    font-size: 40px;
     font-family: 'Galatea-Thin';
-    margin-left: 25%;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
 }
 
 #menu-cont {
-    width: 75%;
-    height: 700px;
-    margin-left: 25%;
-    margin-top: 50px;
+    width: 95%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .food-item {
-    
+    width: 31.5%;
+    height: auto;
+    margin-top: 2.5%;
+}
+
+.food-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.food-txt {
+    width: 100%;
+    font-family: 'Galatea';
+    font-size: 19px;
+}
+
+.food-price {
+    width: 100%;
+    font-family: 'Galatea-Thin';
+    font-size: 15px;
 }
