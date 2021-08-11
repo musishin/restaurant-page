@@ -125,7 +125,7 @@ body {
 }
 
 #rest-name {
-    font-size: 28px;
+    font-size: 2vw;
     font-family: 'Galatea-Light';
     font-style: italic;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .menu-items {
-    font-size: 15px;
+    font-size: 1vw;
     cursor: pointer;
 }
 
@@ -157,7 +157,7 @@ body {
 }
 
 .social-logo {
-    width: 13px;
+    width: 0.9vw;
     cursor: pointer;
 }
 
