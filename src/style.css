@@ -146,6 +146,20 @@ body {
     text-decoration: underline;
 }
 
+#social-cont {
+    position: absolute;
+    bottom: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.social-logo {
+    width: 13px;
+    cursor: pointer;
+}
+
 
 
 /* Home Page */
