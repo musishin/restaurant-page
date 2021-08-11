@@ -8,6 +8,7 @@ import topMenuImg from './images/cafe-img-2.jpeg';
 
 export default function menuPage() {
     const bodyCont = document.createElement('div');
+    const mainCont = document.createElement('div');
     const menuImgCont = document.createElement('div');
     const menuImg = document.createElement('img');
     const menuTitle = document.createElement('div');
@@ -37,10 +38,22 @@ export default function menuPage() {
     const food5Price = document.createElement('div');
     const food6Price = document.createElement('div');
 
-    bodyCont.appendChild(menuImgCont);
+    const footer = document.createElement('div');
+    const footerSecOne = document.createElement('div');
+    const footerSecTwo = document.createElement('div');
+    const footerSecThree = document.createElement('div');
+    const footerSecOneTitle = document.createElement('div');
+    const footerSecTwoTitle = document.createElement('div');
+    const footerSecThreeTitle = document.createElement('div');
+    const footerSecOneText = document.createElement('div');
+    const footerSecTwoText = document.createElement('div');
+    const footerSecThreeText = document.createElement('div');
+
+    bodyCont.appendChild(mainCont);
+    mainCont.appendChild(menuImgCont);
     menuImgCont.appendChild(menuImg);
     menuImgCont.appendChild(menuTitle);
-    bodyCont.appendChild(menuCont);
+    mainCont.appendChild(menuCont);
     menuCont.appendChild(foodItem1);
     menuCont.appendChild(foodItem2);
     menuCont.appendChild(foodItem3);
@@ -66,7 +79,18 @@ export default function menuPage() {
     foodItem6.appendChild(food6Txt);
     foodItem6.appendChild(food6Price);
 
-    menuTitle.innerHTML = 'Pastry';
+    mainCont.appendChild(footer);
+    footer.appendChild(footerSecOne);
+    footer.appendChild(footerSecTwo);
+    footer.appendChild(footerSecThree);
+    footerSecOne.appendChild(footerSecOneTitle);
+    footerSecOne.appendChild(footerSecOneText);
+    footerSecTwo.appendChild(footerSecTwoTitle);
+    footerSecTwo.appendChild(footerSecTwoText);
+    footerSecThree.appendChild(footerSecThreeTitle);
+    footerSecThree.appendChild(footerSecThreeText);
+
+    menuTitle.innerHTML = 'Our Menu';
     food1Txt.innerHTML = 'Taro Buttercream Bread';
     food1Price.innerHTML = '$12.95';
     food2Txt.innerHTML = 'Choco Cream Bread';
@@ -80,6 +104,13 @@ export default function menuPage() {
     food6Txt.innerHTML = 'Red Bean Bread';
     food6Price.innerHTML = '$12.95';
 
+    footerSecOneTitle.innerHTML = 'ABOUT OUR COMPANY';
+    footerSecTwoTitle.innerHTML = 'POLICY AND PROMOTION';
+    footerSecThreeTitle.innerHTML = 'REWARDS';
+    footerSecOneText.innerText = '\n\n\nABOUT SEVENTH HEAVEN\n\n\nCAREERS\n\n\nINVESTOR RELATIONS';
+    footerSecTwoText.innerText = '\n\n\nSTORE POLICY';
+    footerSecThreeText.innerText = '\n\n\nABOUT MEMBERS\' POLICY';
+
     menuImg.src = topMenuImg;
     foodImg1.src = menuImg1;
     foodImg2.src = menuImg2;
@@ -88,10 +119,16 @@ export default function menuPage() {
     foodImg5.src = menuImg5;
     foodImg6.src = menuImg6;
 
-    bodyCont.setAttribute('id', 'menu-body-cont');
+    bodyCont.classList.add('body-cont');
+    mainCont.setAttribute('id', 'main-cont');
+    mainCont.classList.add('parallax');
+    menuImgCont.classList.add('parallax-layer', 'parallax-layer-back');
     menuImgCont.setAttribute('id', 'menu-top-cont');
     menuImg.setAttribute('id', 'menu-top-img');
+    menuImg.classList.add('image-fade-in');
     menuTitle.setAttribute('id', 'menu-title');
+    menuTitle.classList.add('image-fade-in');
+    menuCont.classList.add('parallax-layer', 'parallax-layer-base');
     menuCont.setAttribute('id', 'menu-cont');
     foodItem1.classList.add('food-item');
     foodItem2.classList.add('food-item');
@@ -117,6 +154,18 @@ export default function menuPage() {
     food5Price.classList.add('food-price');
     food6Txt.classList.add('food-txt');
     food6Price.classList.add('food-price');
+
+    footer.setAttribute('id', 'footer');
+    footer.classList.add('parallax-layer', 'parallax-layer-base');
+    footerSecOne.classList.add('footer-section');
+    footerSecTwo.classList.add('footer-section');
+    footerSecThree.classList.add('footer-section');
+    footerSecOneTitle.classList.add('footer-section-title');
+    footerSecTwoTitle.classList.add('footer-section-title');
+    footerSecThreeTitle.classList.add('footer-section-title');
+    footerSecOneText.classList.add('footer-section-text');
+    footerSecTwoText.classList.add('footer-section-text');
+    footerSecThreeText.classList.add('footer-section-text');
 
     return bodyCont;
 }

@@ -395,6 +395,7 @@ body {
     max-height: 320px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-section {
@@ -421,23 +422,22 @@ body {
 #menu-body-cont {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 75%;
-    min-height: 100vh;
-    margin-left: 25%;
-    background: rgb(245, 245, 245);
+    width: 100%;
 }
 
 #menu-top-cont {
     width: 100%;
-    height: 400px;
+    height: 100vh;
     overflow: hidden;
-    position: relative;
+    margin-left: 25%;
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
 }
 
 #menu-top-img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 #menu-title {
@@ -454,11 +454,17 @@ body {
 }
 
 #menu-cont {
-    width: 95%;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    background: rgb(245, 245, 245);
+    width: 71%;
+    margin-top: 100vh;
+    margin-bottom: 50px;
+    transition: 1s;
+    margin-left: 25%;
+    padding: 0 2% 2% 2%;
 }
 
 .food-item {
@@ -470,6 +476,7 @@ body {
 .food-img {
     width: 100%;
     object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .food-txt {
@@ -482,4 +489,69 @@ body {
     width: 100%;
     font-family: 'Galatea-Thin';
     font-size: 15px;
+}
+
+
+
+/* Contact Page */
+
+#contact-top-cont {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-top-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#contact-title {
+    position: absolute;
+    left: 100px;
+    top: 25%;
+    bottom: 25%;
+    height: 50%;
+    font-size: 40px;
+    font-family: 'Galatea-Thin';
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    color: white;
+}
+
+#contact-cont {
+    display: flex;
+    position: relative;
+    background: rgb(245, 245, 245);
+    width: 75%;
+    min-height: 300px;
+    margin-top: 100vh;
+    margin-bottom: 50px;
+    transition: 1s;
+    margin-left: 25%;
+}
+
+.contact-cont-divs {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-div-titles {
+    font-family: 'Galatea';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-div-info {
+    font-family: 'Galatea-Thin';
+    font-size: 15px;
+    text-align: center;
 }

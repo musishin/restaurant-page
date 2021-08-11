@@ -66,6 +66,12 @@ document.getElementById('menu-item').addEventListener('click', () => {
     content.appendChild(bodyCont.getBodyCont());
 });
 
+document.getElementById('contact-item').addEventListener('click', () => {
+    content.removeChild(bodyCont.getBodyCont());
+    bodyCont.setBodyCont(contactPage());
+    content.appendChild(bodyCont.getBodyCont());
+});
+
 //changes color of blurb-cont background when page is scrolled up a certain amount.
 document.getElementById('main-cont').addEventListener('scroll', (e) => {
     let scrollPos = 0;
